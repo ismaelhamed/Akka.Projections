@@ -1,0 +1,35 @@
+<Project>
+	<PropertyGroup>
+		<Copyright>Copyright © 2013-2022 Akka.NET Team</Copyright>
+		<Authors>Akka.NET Team</Authors>
+		<VersionPrefix>0.1.0</VersionPrefix>
+		<PackageIconUrl>https://getakka.net/images/akkalogo.png</PackageIconUrl>
+		<PackageProjectUrl>https://github.com/ismaelhamed/Akka.Projection</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/akkadotnet/akka.net/blob/master/LICENSE</PackageLicenseUrl>
+		<NoWarn>$(NoWarn);CS1591;xUnit1013</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup>
+		<XunitVersion>2.4.1</XunitVersion>
+		<AkkaVersion>1.5.0-beta*</AkkaVersion>
+		<TestSdkVersion>16.9.1</TestSdkVersion>
+		<NetCoreTestVersion>netcoreapp3.1</NetCoreTestVersion>
+		<NetTestVersion>net6.0</NetTestVersion>
+		<NetStandardLibVersion>netstandard2.0</NetStandardLibVersion>
+	</PropertyGroup>
+	<PropertyGroup>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+  	<!-- SourceLink support for all Akka.NET projects -->
+  	<ItemGroup>
+    	<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+  	</ItemGroup>
+	<PropertyGroup>
+		<!--<PublishRepositoryUrl>true</PublishRepositoryUrl>-->
+		<RepositoryUrl>https://github.com/ismaelhamed/Akka.Projection</RepositoryUrl>
+		<!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>	  
+</Project>
